@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ltie8 ltie9" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ltie8 ltie9" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ltie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="en"> <![endif]-->
+<html lang="en"> <!--<![endif]-->
+<head>
+	<title>Photo Gallery - The Hotel</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+    <!--[if IE 7.0]>
+    <link rel="stylesheet" href="css/ie7.css" type="text/css" />
+    <![endif]-->
+    
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/ie6.css" type="text/css" />
+    <![endif]-->
+    	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<script type="text/javascript" src="js/jquery.slideshow.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->
+    
+    <!-- Ativando o jQuery lightBox plugin -->
+    <script type="text/javascript">
+    $(function() {
+        $('#gallery a').lightBox();
+    });
+    </script>
+	
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$('#slideshow').slideshow({
+				timeout: 5000,
+				fadetime: 2000,
+				type: 'sequence'
+			});
+	        });
+
+	</script>
+
+
+</head>
+<body>
+	<div id="wrap">
+    	<div id="banner">
+        	<div id="logo">
+            	<img src="images/logo.jpg" alt="Kilwa Ruins Lodge"/>
+            </div>
+            <div id="topnav">
+            	<ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html"  class="current">Gallery</a></li>
+                    <li  class="last"><a href="contacts.html">Contacts</a></li>
+            	</ul>
+            </div>
+        </div>
+        <div id="slideshow">
+            	<img src="images/slide1.jpg" alt="Beach Resort"/>
+            	<img src="images/slide2.jpg" alt="Lodge"/>
+            	<img src="images/slide3.jpg" alt="Swimming Pool"/>
+            	<img src="images/slide4.jpg" alt="The Beach"/>
+        </div>
+        <div id="leftcol">
+        	<div class="box">
+            	<h2>Quick Links</h2>
+            	<ul>
+                    <li><a href="about.html">About</a>
+                    	<ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li  class="last"><a href="contacts.html">Contacts</a></li>
+                </ul>
+          </div>
+        	<div class="box">
+            	<h2>Videos</h2>
+                <p><a href="links-videos.html"><img src="images/video.jpg" alt="Video"/></a></p>
+          </div>
+        </div>
+        
+        <div id="rightcol">
+          	<h1>Photo Gallery</h1>
+      		<div id="gallery">
+                <ul>
+                    <li><a href="gallery/Kilwa_0084.jpg" ><img src="gallery/thumbs/Kilwa_0084.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0099.jpg" ><img src="gallery/thumbs/Kilwa_0099.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0100.jpg" ><img src="gallery/thumbs/Kilwa_0100.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0105.jpg" ><img src="gallery/thumbs/Kilwa_0105.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0112.jpg" ><img src="gallery/thumbs/Kilwa_0112.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0119.jpg" ><img src="gallery/thumbs/Kilwa_0119.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0120.jpg" ><img src="gallery/thumbs/Kilwa_0120.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0126.jpg" ><img src="gallery/thumbs/Kilwa_0126.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0142.jpg" ><img src="gallery/thumbs/Kilwa_0142.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0284.jpg" ><img src="gallery/thumbs/Kilwa_0284.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0483.jpg" ><img src="gallery/thumbs/Kilwa_0483.jpg"/></a></li>
+                    <li><a href="gallery/Kilwa_0512.jpg" ><img src="gallery/thumbs/Kilwa_0512.jpg"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+        	<div id="copyright">By Ray Omutaba</div>
+ 			Copyright &copy; 2016
+        </div>
+    </div>
+</body>
+</html>
